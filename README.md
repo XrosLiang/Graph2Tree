@@ -1,51 +1,26 @@
-# A Goal-Driven Tree-Structured Neural Model for Math Word Problems
+# Generative Adversarial Zero-Shot Relational Learning for Knowledge Graphs
 
-This repository is the [PyTorch](http://pytorch.org/) implementation for the IJCAI 2019 accepted paper:
-> Zhipeng Xie* and Shichao Sun*,
-> [A Goal-Driven Tree-Structured Neural Model for Math Word Problems](https://www.ijcai.org/proceedings/2019/0736.pdf)
-> IJCAI 2019. 
+PyTorch implementation of Graph based Math Word Problem solver described in our ACL 2020 paper Graph-to-Tree Learning for Solving Math Word Problems. In this work, we propose a solution for Math Word Problem Solving via graph neural network.
 
-\* indicates equal contribution.
+## Steps to run the experiments
 
-## Seq2Tree Model
-A Seq2Tree Neural Network containing top-down Recursive Neural Network and bottom-up Recursive Neural Network
+### Requirements
+* ``Python 3.6 ``
+* ``>= PyTorch 1.0.0``
 
-<img src='readme/tree_decoder.png' align="center" width="700px">
+For more details, please refer to requiremnt file.
 
-
-## Requirements
-- python 3
-- [PyTorch](http://pytorch.org/) 0.4.1
+### Training
+* python run_seq2tree_graph.py
 
 
-## Train and Test
-
-- Math23K: 
+### Reference
 ```
-python3 run_seq2tree.py
+@article{zhang2020graph2tree,
+  title={Graph-to-Tree Learning for Solving Math Word Problems},
+  author={Zhang, Jipeng and Wang, Lei and Lee, Roy Ka-Wei and Bin, Yi and Shao, Jie and Lim, Ee-Peng},
+  journal={ACL 2020},
+  year={2020}
+}
 ```
-
-## Results
-
-| Model | Accuracy | 
-|--------|--------|
-|Hybrid model w/ SNI | 64.7% | 
-|Ensemble model w/ EN | 68.4% | 
-|Seq2Tree w/o Bottom-up RvNN | 70.0% | 
-|Seq2Tree| **74.3%** | 
-
-
-## Citation
-    @inproceedings{ijcai2019-736,
-      title     = {A Goal-Driven Tree-Structured Neural Model for Math Word Problems},
-      author    = {Xie, Zhipeng and Sun, Shichao},
-      booktitle = {Proceedings of the Twenty-Eighth International Joint Conference on
-                   Artificial Intelligence, {IJCAI-19}},
-      publisher = {International Joint Conferences on Artificial Intelligence Organization},             
-      pages     = {5299--5305},
-      year      = {2019},
-      month     = {7},
-      doi       = {10.24963/ijcai.2019/736},
-      url       = {https://doi.org/10.24963/ijcai.2019/736},
-    }
 
