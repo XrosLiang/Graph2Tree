@@ -1,4 +1,4 @@
-# Generative Adversarial Zero-Shot Relational Learning for Knowledge Graphs
+# Graph-to-Tree Learning for Solving Math Word Problems
 
 PyTorch implementation of Graph based Math Word Problem solver described in our ACL 2020 paper Graph-to-Tree Learning for Solving Math Word Problems. In this work, we propose a solution for Math Word Problem Solving via graph neural network.
 
